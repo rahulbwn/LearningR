@@ -74,5 +74,17 @@ length(b)
   typeof(logii)
   class(T)  #OR
   typeof(F)
+
+
+?complex
+# Vector containing complex numbers
+comp<-c(2+3i, 5+1i,2+8i)
+comp
+class(comp)
+
+?raw # Vector contaianing row bytes of data
+#raw(n) contains n row bytes
+
+raw(5)
  
  
