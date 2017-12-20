@@ -87,4 +87,9 @@ class(comp)
 
 raw(5)
  
- 
+ # value at what index
+
+which(a==5) #OR returns index no. where a is equals to 5
+
+which(a<5)
+
