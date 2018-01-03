@@ -47,3 +47,80 @@ matt
 
 identical(nrow(matt),NROW(matt))  # NROW used for vector
 identical(ncol(matt),NCOL(matt)) 
+
+
+
+
+
+matt<-matrix(11:19,ncol=3,
+            dimnames=list(c("A","B","C"),c("X","Y","Z"))
+            )
+
+matt
+
+# Ideexting
+
+#matt["A",-1]
+
+#matt[2,c(1,3)]
+
+
+#Matrix Combination
+
+mat<-matrix(1:9,nrow=3)
+mat
+
+#1
+
+c(matt,mat)
+
+#new_mat<-matrix(c(matt,mat), nrow=6)
+#new_mat
+
+rbind(matt,mat)
+
+cbind(matt,mat)
+
+
+#  Tranjspose
+
+t(matt)
+
+# Arthematics
+
+# Addition
+
+matt+mat
+
+# Substraction
+
+matt-mat
+
+# Multiplication
+matt * mat
+
+#division
+
+matt / mat
+
+#Inner Multiplication
+
+#Outer Multiplication
+matt %*% mat
+#OR
+outer(matt,mat)
+
+matt %o% mat
+
+
+# Inverse of matrix
+# each element inversion
+matt1<-matt^-1 
+matt1
+
+#Actual Inversion
+inverse_of_matrix<- solve(mat)
+inverse_of_matrix
+
+# A x inverse of A=I
+matt %*% inverse_of_matrix
